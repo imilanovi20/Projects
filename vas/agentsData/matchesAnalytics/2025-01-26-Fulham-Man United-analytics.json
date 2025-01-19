@@ -1,0 +1,25 @@
+{
+    "date": "2025-01-26",
+    "home_team": "Fulham",
+    "away_team": "Man United",
+    "home_last_4": [
+        "L",
+        "W",
+        "D",
+        "D"
+    ],
+    "away_last_4": [
+        "W",
+        "L",
+        "L",
+        "W"
+    ],
+    "home_avg_shots": 11.52,
+    "away_avg_shots": 11.44,
+    "home_team_overall_position": 9,
+    "home_team_overall_xg": "37.92",
+    "home_team_home_xg": "18.52",
+    "away_team_overall_position": 13,
+    "away_team_overall_xg": "34.28",
+    "away_team_away_xg": "15.34"
+}

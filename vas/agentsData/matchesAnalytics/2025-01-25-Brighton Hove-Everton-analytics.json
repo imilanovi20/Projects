@@ -1,0 +1,25 @@
+{
+    "date": "2025-01-25",
+    "home_team": "Brighton Hove",
+    "away_team": "Everton",
+    "home_last_4": [
+        "W",
+        "W",
+        "D",
+        "D"
+    ],
+    "away_last_4": [
+        "L",
+        "L",
+        "L",
+        "L"
+    ],
+    "home_avg_shots": 10.45,
+    "away_avg_shots": 9.42,
+    "home_team_overall_position": 10,
+    "home_team_overall_xg": "32.42",
+    "home_team_home_xg": "18.12",
+    "away_team_overall_position": 16,
+    "away_team_overall_xg": "21.36",
+    "away_team_away_xg": "9.70"
+}

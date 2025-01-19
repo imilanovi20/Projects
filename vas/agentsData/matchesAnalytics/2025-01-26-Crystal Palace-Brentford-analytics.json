@@ -1,0 +1,25 @@
+{
+    "date": "2025-01-26",
+    "home_team": "Crystal Palace",
+    "away_team": "Brentford",
+    "home_last_4": [
+        "L",
+        "L",
+        "D",
+        "D"
+    ],
+    "away_last_4": [
+        "W",
+        "L",
+        "W",
+        "L"
+    ],
+    "home_avg_shots": 11.6,
+    "away_avg_shots": 8.81,
+    "home_team_overall_position": 12,
+    "home_team_overall_xg": "35.81",
+    "home_team_home_xg": "18.93",
+    "away_team_overall_position": 11,
+    "away_team_overall_xg": "38.69",
+    "away_team_away_xg": "14.68"
+}

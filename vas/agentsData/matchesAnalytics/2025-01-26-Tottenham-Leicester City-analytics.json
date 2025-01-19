@@ -1,0 +1,25 @@
+{
+    "date": "2025-01-26",
+    "home_team": "Tottenham",
+    "away_team": "Leicester City",
+    "home_last_4": [
+        "D",
+        "W",
+        "L",
+        "L"
+    ],
+    "away_last_4": [
+        "D",
+        "L",
+        "L",
+        "D"
+    ],
+    "home_avg_shots": 10.93,
+    "away_avg_shots": 7.15,
+    "home_team_overall_position": 15,
+    "home_team_overall_xg": "41.56",
+    "home_team_home_xg": "21.34",
+    "away_team_overall_position": null,
+    "away_team_overall_xg": null,
+    "away_team_away_xg": null
+}

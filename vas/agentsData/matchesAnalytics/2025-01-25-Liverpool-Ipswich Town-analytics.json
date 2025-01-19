@@ -1,0 +1,25 @@
+{
+    "date": "2025-01-25",
+    "home_team": "Liverpool",
+    "away_team": "Ipswich Town",
+    "home_last_4": [
+        "W",
+        "W",
+        "W",
+        "L"
+    ],
+    "away_last_4": [
+        "L",
+        "L",
+        "D",
+        "D"
+    ],
+    "home_avg_shots": 14.52,
+    "away_avg_shots": 6.96,
+    "home_team_overall_position": 1,
+    "home_team_overall_xg": "55.98",
+    "home_team_home_xg": "23.60",
+    "away_team_overall_position": 18,
+    "away_team_overall_xg": "23.85",
+    "away_team_away_xg": "11.59"
+}

@@ -1,0 +1,25 @@
+{
+    "date": "2025-01-25",
+    "home_team": "Southampton",
+    "away_team": "Newcastle",
+    "home_last_4": [
+        "L",
+        "L",
+        "L",
+        "L"
+    ],
+    "away_last_4": [
+        "W",
+        "D",
+        "W",
+        "W"
+    ],
+    "home_avg_shots": 6.39,
+    "away_avg_shots": 12.33,
+    "home_team_overall_position": 20,
+    "home_team_overall_xg": "25.53",
+    "home_team_home_xg": "14.61",
+    "away_team_overall_position": 4,
+    "away_team_overall_xg": "38.69",
+    "away_team_away_xg": "19.76"
+}

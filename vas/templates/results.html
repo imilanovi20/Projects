@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezultati Predikcije</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <style>
+        .result {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 20px;
+            font-size: 14px;
+            margin: 0 5px;
+            color: white;
+        }
+        .W {
+            background-color: green;
+        }
+        .D {
+            background-color: yellow;
+            color: black;
+        }
+        .L {
+            background-color: red;
+        }
+        .stats {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Rezultati Predikcije</h1>
+
+        {% if predictions %}
+            {% for match in predictions %}
+                <div class="match-result">
+                    <h2>{{ match.date }} - {{ match.home_team }} protiv {{ match.away_team }}</h2>
+                    
+                    <p>
+                        <strong>Rezultati ekipe {{ match.home_team }}:</strong>
+                        {% for result in match.home_last_4 %}
+                            <span class="result {{ result }}">{{ result }}</span>
+                        {% endfor %}
+                    </p>
+                    <p>
+                        <strong>Rezultati ekipe {{ match.away_team }}:</strong>
+                        {% for result in match.away_last_4 %}
+                            <span class="result {{ result }}">{{ result }}</span>
+                        {% endfor %}
+                    </p>
+
+                    <div class="stats">
+                        <p><strong>Prosječan broj udaraca ({{ match.home_team }}):</strong> {{ match.home_avg_shots }}</p>
+                        <p><strong>Prosječan broj udaraca ({{ match.away_team }}):</strong> {{ match.away_avg_shots }}</p>
+                        <p><strong>Pozicija na ljestvici ({{ match.home_team }}):</strong> {{ match.home_team_overall_position }}</p>
+                        <p><strong>Pozicija na ljestvici ({{ match.away_team }}):</strong> {{ match.away_team_overall_position }}</p>
+                        <p><strong>xG za domaćina:</strong> {{ match.home_team_overall_xg }}</p>
+                        <p><strong>xG za gosta:</strong> {{ match.away_team_overall_xg }}</p>
+                    </div>
+
+                    <p><strong>Predikcija:</strong> {{ match.prediction }}</p>
+                </div>
+                <hr>
+            {% endfor %}
+        {% else %}
+            <p>Nema dostupnih rezultata za prikaz.</p>
+        {% endif %}
+
+        <a href="/">Povratak na početnu stranicu</a>
+    </div>
+</body>
+</html>

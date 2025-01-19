@@ -1,0 +1,25 @@
+{
+    "date": "2025-01-25",
+    "home_team": "Bournemouth",
+    "away_team": "Nottingham",
+    "home_last_4": [
+        "D",
+        "D",
+        "W",
+        "L"
+    ],
+    "away_last_4": [
+        "D",
+        "W",
+        "D",
+        "W"
+    ],
+    "home_avg_shots": 12.81,
+    "away_avg_shots": 0,
+    "home_team_overall_position": 6,
+    "home_team_overall_xg": "46.27",
+    "home_team_home_xg": "21.21",
+    "away_team_overall_position": 3,
+    "away_team_overall_xg": "31.02",
+    "away_team_away_xg": "16.46"
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier League Predictor</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script>
+        function startPrediction() {
+            // Prikazuje poruku o učitavanju
+            document.getElementById("loading").style.display = "block";
+
+            // Pošalje formu serveru
+            document.getElementById("predictionForm").submit();
+
+            // Čeka 15 sekundi i prebacuje na /results
+            setTimeout(function() {
+                window.location.href = "/results";
+            }, 30000); // 15 sekundi
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Predvidite rezultate Premier Lige</h1>
+        <form id="predictionForm" method="POST" action="/">
+            <label for="start_date">Početni datum (YYYY-MM-DD):</label>
+            <input type="date" id="start_date" name="start_date" required>
+            <br>
+            <label for="end_date">Završni datum (YYYY-MM-DD):</label>
+            <input type="date" id="end_date" name="end_date" required>
+            <br>
+            <button type="button" onclick="startPrediction()">Pokreni predikciju</button>
+        </form>
+
+        <!-- Popup za učitavanje -->
+        <div id="loading" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0, 0, 0, 0.7); color: white; padding: 20px; border-radius: 10px;">
+            <p>Učitavanje predikcija, molimo pričekajte...</p>
+        </div>
+    </div>
+</body>
+</html>

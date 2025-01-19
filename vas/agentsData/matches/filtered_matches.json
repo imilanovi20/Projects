@@ -1,0 +1,52 @@
+[
+    {
+        "date": "2025-01-25",
+        "home_team": "Liverpool",
+        "away_team": "Ipswich Town"
+    },
+    {
+        "date": "2025-01-25",
+        "home_team": "Wolverhampton",
+        "away_team": "Arsenal"
+    },
+    {
+        "date": "2025-01-25",
+        "home_team": "Brighton Hove",
+        "away_team": "Everton"
+    },
+    {
+        "date": "2025-01-25",
+        "home_team": "Southampton",
+        "away_team": "Newcastle"
+    },
+    {
+        "date": "2025-01-25",
+        "home_team": "Bournemouth",
+        "away_team": "Nottingham"
+    },
+    {
+        "date": "2025-01-25",
+        "home_team": "Man City",
+        "away_team": "Chelsea"
+    },
+    {
+        "date": "2025-01-26",
+        "home_team": "Crystal Palace",
+        "away_team": "Brentford"
+    },
+    {
+        "date": "2025-01-26",
+        "home_team": "Tottenham",
+        "away_team": "Leicester City"
+    },
+    {
+        "date": "2025-01-26",
+        "home_team": "Aston Villa",
+        "away_team": "West Ham"
+    },
+    {
+        "date": "2025-01-26",
+        "home_team": "Fulham",
+        "away_team": "Man United"
+    }
+]

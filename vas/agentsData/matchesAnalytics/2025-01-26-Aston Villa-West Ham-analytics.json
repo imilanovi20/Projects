@@ -1,0 +1,25 @@
+{
+    "date": "2025-01-26",
+    "home_team": "Aston Villa",
+    "away_team": "West Ham",
+    "home_last_4": [
+        "W",
+        "L",
+        "W",
+        "W"
+    ],
+    "away_last_4": [
+        "L",
+        "W",
+        "L",
+        "D"
+    ],
+    "home_avg_shots": 11.52,
+    "away_avg_shots": 11.72,
+    "home_team_overall_position": 7,
+    "home_team_overall_xg": "39.96",
+    "home_team_home_xg": "24.42",
+    "away_team_overall_position": 14,
+    "away_team_overall_xg": "31.52",
+    "away_team_away_xg": "13.16"
+}

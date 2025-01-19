@@ -1,0 +1,25 @@
+{
+    "date": "2025-01-25",
+    "home_team": "Man City",
+    "away_team": "Chelsea",
+    "home_last_4": [
+        "W",
+        "W",
+        "W",
+        "W"
+    ],
+    "away_last_4": [
+        "L",
+        "W",
+        "D",
+        "W"
+    ],
+    "home_avg_shots": 16.41,
+    "away_avg_shots": 13.52,
+    "home_team_overall_position": 8,
+    "home_team_overall_xg": "42.03",
+    "home_team_home_xg": "22.41",
+    "away_team_overall_position": 5,
+    "away_team_overall_xg": "45.24",
+    "away_team_away_xg": "23.77"
+}
