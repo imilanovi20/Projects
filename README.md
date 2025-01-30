@@ -1,4 +1,7 @@
 # Projects
+
+pip install pandas scikit-learn
+
 Da bi se kod pokrenio potrebno je prethodno instalirati sve potrebne biblioteke
 Postoje 2 načina pokretanja
 
