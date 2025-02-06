@@ -1,4 +1,4 @@
-# Projects
+# Višeagentni sustav za predikciju rezultata nogometnih utakmica
 
 pip install pandas scikit-learn
 
