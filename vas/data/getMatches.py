@@ -1,11 +1,10 @@
 import requests
 import json
 
-# Vaš API ključ za football-data.org
-api_key = "5fbee9675c9943d399c7cf46d3ad99b3"
+# Vaš API ključ za football-data.org - potrebno je staviti svoj API ključ
+api_key = "..."
 headers = {"X-Auth-Token": api_key}
 
-# Funkcija za dohvaćanje svih timova u Premier ligi
 def get_teams():
     url = "https://api.football-data.org/v4/competitions/PL/teams"
     response = requests.get(url, headers=headers)
@@ -15,7 +14,6 @@ def get_teams():
         return None
     return response.json()
 
-# Funkcija za dohvaćanje rasporeda svih utakmica
 def get_matches():
     url = "https://api.football-data.org/v4/competitions/PL/matches"
     response = requests.get(url, headers=headers)
@@ -25,28 +23,22 @@ def get_matches():
         return None
     return response.json()
 
-# Dohvati sve timove
 teams_data = get_teams()
 if teams_data is None:
     exit()
-
-# Spremi sirove podatke o timovima u JSON
+    
 with open("teams.json", "w") as f:
     json.dump(teams_data, f, indent=4)
 print("Podaci o timovima spremljeni u teams.json")
 
-# Dohvati sve utakmice
 matches_data = get_matches()
 if matches_data is None:
     exit()
 
-# Spremi sirove podatke o utakmicama u JSON
 with open("matches.json", "w") as f:
     json.dump(matches_data, f, indent=4)
 print("Podaci o utakmicama spremljeni u matches.json")
 
-# Izračun atributa
-# Učitaj podatke iz lokalnih datoteka
 with open("teams.json", "r") as f:
     teams_data = json.load(f)
 
@@ -60,14 +52,12 @@ def get_team_position(team_id):
             return team.get("position", None)
     return None
 
-# Izračunaj bodove po utakmici (PPG) i razliku za posljednje 4 utakmice
 def calculate_ppg_diff(team_id, matches_data):
     team_matches = [
         match for match in matches_data["matches"]
         if match["homeTeam"]["id"] == team_id or match["awayTeam"]["id"] == team_id
     ]
     
-    # Sortiraj utakmice prema datumu (najnovije prve)
     team_matches.sort(key=lambda x: x["utcDate"], reverse=True)
     
     # Izračunaj bodove za posljednje 4 utakmice
@@ -115,8 +105,7 @@ def calculate_shots_average(team_id, matches_data):
         total_matches += 1
     
     return total_shots / total_matches if total_matches > 0 else 0
-
-# Pripremi podatke za sve utakmice
+    
 data = []
 for match in matches_data["matches"]:
     home_team_id = match["homeTeam"]["id"]
@@ -144,7 +133,6 @@ for match in matches_data["matches"]:
         "away_shots_average": away_shots_average,
     })
 
-# Spremi obrađene podatke u JSON
 with open("processed_match_data.json", "w") as f:
     json.dump(data, f, indent=4)
 
