@@ -1,4 +1,5 @@
 # Višeagentni sustav za predikciju rezultata nogometnih utakmica
+Na ovom repozitoriju nalazi se projekt iz kolegija *Višeagentni sustavi* na Fakultetu organizacije i informatike.
 
 Implementiran je sustav za predikciju rezultata nogometnih utakmica koristeći specjalizirane agente za pojedine zadatke.
 
