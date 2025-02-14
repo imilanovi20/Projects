@@ -4,7 +4,8 @@ Implementiran je sustav za predikciju rezultata nogometnih utakmica koristeći s
 
 Sustav radi na način tako da korisnik odabere raspon datuma, nakon toga agent za dohvaćanje budućih utakmica dohvati sve utakmice u zadanome razdoblju koje će se održati te šalje jednu po jednu utakmicu agentu za dohvaćanje potrebnih metrika. Nakon što se dohvate sve potrebne metrike za pojedinu utakmicu agent šalje podatke agentu za predikciju rezultata. Nakon što agent za predikciju napravi potrebno šalje prethodnom agentu da je predikcija napravljena te agent za dohvaćanje metrika šalje tu istu poruku agentu za dohvaćanje utakmica. U tom trenutku agent za dohvaćanje utakmica šalje slijedeću utakmicu agentu za dohvaćanje metrika i tako u krug.
 
-Primjer rada sustava nalazi se u nastavku.
+### 📈 Primjer rada sustava 
+
 
 ![pocetna](https://github.com/user-attachments/assets/d247c4ad-2c25-47b5-a194-e395684ee8e9)
 
@@ -12,7 +13,7 @@ Primjer rada sustava nalazi se u nastavku.
 
 
 
-## Korišteni podatci
+## 📊 Korišteni podatci
 
 Za predikciju rezultata korišten je Random Forest algoritam. Za učenje sustava korišteni su podatci sa platforme Kaggle. Podatci su preuzeti sa platforme i spremljeni u *data/train_model* uz pomoć python skripte iz orginalnog csv-a su filtrirani samo pojedni atributi koji će se koristiti za predikcije a to su:
 
@@ -52,14 +53,18 @@ Sustav se sastoji od 3 agenta: GetMatchesAgent, GetMatchesDataAgent, i RandomFor
 Sustav radi unutar Conda virtualnog okruženja koje se koristi za komunukaciju među agentima. Potrebnu je instalirati pokrenuti okruženje kako bi kod radio.
 
 Dodatne bibliteke:
-pip install pandas scikit-learn
-
+```bash
+   pip install pandas scikit-learn
+```
 Da bi se kod pokrenio potrebno je prethodno instalirati sve potrebne biblioteke
 Postoje 2 načina pokretanja
-
-1. python3 main.py
+```bash
+   python3 main.py
+```
    + ako se želi samo ispis u konzoli i generiranje JSON datoteka iz kojeg se čitaju predikcije
-2. python3 app.py
+```bash
+   python3 app.py
+```
    + ako se želi pokrenuti web sučelje
    + odabere se početni i završni datum i čeka se 30 sekundi nakon čega se prikazuju predikcije
    
